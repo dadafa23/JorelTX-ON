@@ -49,7 +49,7 @@ Other GPUs may work, but results can vary.
 Clone the repository:
 
 ```bash
-git clone https://github.com/eujorelsono/JorelTX-ON.git
+git clone https://github.com/dadafa23/JorelTX-ON.git
 cd JorelTX-ON
 ```
 
