@@ -50,6 +50,40 @@ The default CAS sharpening value is:
 
 ---
 
+## 🎨 Before & After
+
+The following comparisons show JorelTX ON V5 with the shader configuration enabled versus the original Roblox image.
+
+All screenshots were captured at **2560×1440**.
+
+### 🌄 Realistic Landscape
+
+| Before | After |
+|---|---|
+| <img src="docs/comparisons/realistic-landscape-before.png" width="480"> | <img src="docs/comparisons/realistic-landscape-after.png" width="480"> |
+
+### 🚗 Car Crushers 2
+
+| Before | After |
+|---|---|
+| <img src="docs/comparisons/car-crushers-2-before.png" width="480"> | <img src="docs/comparisons/car-crushers-2-after.png" width="480"> |
+
+### 🚪 DOORS: The Archives
+
+| Before | After |
+|---|---|
+| <img src="docs/comparisons/doors-the-archives-before.png" width="480"> | <img src="docs/comparisons/doors-the-archives-after.png" width="480"> |
+
+### 🏚️ Apeirophobia
+
+| Before | After |
+|---|---|
+| <img src="docs/comparisons/apeirophobia-before.png" width="480"> | <img src="docs/comparisons/apeirophobia-after.png" width="480"> |
+
+> These comparisons demonstrate the visual changes produced by the JorelTX ON V5 post-processing configuration. Results may vary depending on the game, scene, GPU, driver and display.
+
+---
+
 ## 🖥️ Compatibility
 
 ### Primary target
