@@ -1,1 +1,45 @@
+# JorelTX ON — Presets
 
+This directory contains the official JorelTX ON V5 presets.
+
+## Available presets
+
+Presets will be added here as they are tested and verified.
+
+Each preset should include:
+
+* Its intended use
+* Required dependencies
+* Visual effects enabled
+* Known limitations
+* Installation instructions
+
+## Important
+
+Not every visual effect works correctly with every application, GPU, driver, or rendering configuration.
+
+Some effects tested during development produced visual artifacts, including:
+
+* Broken or distorted UI
+* Cursor artifacts
+* Excessive sharpening
+* Image fragmentation
+* Other rendering glitches
+
+Only configurations that have been tested and considered suitable for release should be added as official presets.
+
+## Naming convention
+
+Presets should use clear and descriptive names.
+
+Example:
+
+```text
+joreltx-on-v5-default.conf
+joreltx-on-v5-performance.conf
+joreltx-on-v5-quality.conf
+```
+
+## Contributing
+
+If you want to submit a new preset, please read the project's `CONTRIBUTING.md` first.
