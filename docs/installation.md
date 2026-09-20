@@ -1,101 +1,65 @@
-# JorelTX ON — Installation Guide
+# JorelTX ON V5 — Installation Guide
 
-This guide explains how to install and use JorelTX ON V5.
+This guide explains how to install and activate **JorelTX ON V5** on Linux using vkBasalt.
 
-## Requirements
+---
 
-JorelTX ON V5 was developed and tested primarily on:
+## 📋 Requirements
 
-* Fedora Linux
-* X11
-* NVIDIA GPU
-* Sober
+JorelTX ON V5 was primarily developed and tested with:
+
+* Linux
 * Vulkan
 * vkBasalt
+* Sober
+* Fedora Linux
+* X11
+* NVIDIA graphics
 
-Other Linux distributions and configurations may work, but they are not officially tested.
+Other distributions, GPUs, drivers and display systems may work, but they have not been the primary development target.
 
-## 1. Clone the repository
+---
 
-Open a terminal and run:
+## 📥 1. Clone the repository
+
+Clone the project from GitHub:
 
 ```bash
 git clone https://github.com/dadafa23/JorelTX-ON.git
 cd JorelTX-ON
 ```
 
-## 2. Install the required software
+---
 
-Make sure the following components are installed and working:
+## 🧩 2. Install the JorelTX ON shaders
 
-* Vulkan
-* vkBasalt
-* Sober
-* NVIDIA drivers
-
-You should verify that Vulkan is working correctly before continuing.
-
-## 3. Review the presets
-
-The `presets/` directory contains the configuration files used by JorelTX ON.
-
-Choose the preset you want to use and review its settings before applying it.
-
-## 4. Apply the configuration
-
-Follow the instructions provided with the selected preset.
-
-JorelTX ON is designed to work alongside the target application rather than modifying the application itself.
-
-## 5. Launch the application
-
-After configuring the preset, launch Sober normally and test the result.
-
-If the image contains visual artifacts, excessive sharpening, broken UI elements, cursor problems, or other unexpected effects, disable the problematic effect or return to the default preset.
-
-## Troubleshooting
-
-### Visual artifacts
-
-Some post-processing effects may produce unwanted artifacts depending on the GPU, driver, game scene, or rendering configuration.
-
-If you experience:
-
-* Glitched textures
-* Broken UI
-* Distorted cursor
-* Excessive sharpening
-* Flickering
-* Unexpected visual effects
-
-disable the affected effect or restore the default configuration.
-
-### Performance problems
-
-Post-processing can affect GPU performance.
-
-If performance decreases significantly:
-
-1. Disable unnecessary effects.
-2. Use a lighter preset.
-3. Check GPU usage and temperature.
-4. Verify that the NVIDIA driver and Vulkan are working correctly.
-
-## Uninstallation
-
-JorelTX ON does not permanently modify the target application.
-
-To stop using it, simply disable or remove the configuration that was applied.
-
-If you cloned the repository only for testing, the local copy can also be removed:
+Make the installer executable:
 
 ```bash
-cd ..
-rm -rf JorelTX-ON
+chmod +x scripts/install.sh
 ```
 
-## Important
+Then run it:
 
-JorelTX ON is an independent community project.
+```bash
+./scripts/install.sh
+```
 
-It is not affiliated with, endorsed by, or officially supported by Roblox, Sober, NVIDIA, Fedora, or vkBasalt.
+The installer places the JorelTX ON shader files in:
+
+```text
+~/.config/vkBasalt/shaders/JorelTX-ON
+```
+
+The installer does **not** modify your current `vkBasalt.conf`.
+
+---
+
+## ⚠️ 3. External shader dependencies
+
+JorelTX ON V5 uses two external shaders that are **not redistributed by this repository**:
+
+```text
+BloomingHDR.fx
+Clarity.fx
+```
