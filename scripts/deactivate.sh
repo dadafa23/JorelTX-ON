@@ -19,7 +19,7 @@ echo "Nenhuma configuração foi alterada."
 exit 1
 fi
 
-LATEST_BACKUP="$(find "$BACKUP_DIR" -maxdepth 1 -type f -name 'vkBasalt.conf.*' -printf '%T@ %p\n' 2>/dev/null | sort -n | tail -1 | cut -d' ' -f2-)"
+LATEST_BACKUP="$(find "$BACKUP_DIR" -maxdepth 1 -type f -name 'vkBasalt.conf.????????-??????' -printf '%T@ %p\n' 2>/dev/null | sort -n | tail -1 | cut -d' ' -f2-)"
 
 if [[ -z "$LATEST_BACKUP" || ! -f "$LATEST_BACKUP" ]]; then
 echo "ERRO: nenhum backup do vkBasalt foi encontrado."
