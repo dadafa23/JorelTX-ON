@@ -41,7 +41,6 @@ echo "[2/4] Procurando dependências externas..."
 find_shader() {
 local shader_name="$1"
 
-```
 local search_paths=(
     "$VKBASALT_DIR/shaders"
     "$HOME/.local/share/reshade"
@@ -61,7 +60,6 @@ for base in "${search_paths[@]}"; do
 done
 
 return 1
-```
 
 }
 
@@ -148,12 +146,10 @@ if [[ -f "$CONFIG_FILE" ]]; then
 TIMESTAMP="$(date '+%Y%m%d-%H%M%S')"
 BACKUP_FILE="$BACKUP_DIR/vkBasalt.conf.$TIMESTAMP"
 
-```
 cp -a "$CONFIG_FILE" "$BACKUP_FILE"
 
 echo "Backup criado:"
 echo "  $BACKUP_FILE"
-```
 
 fi
 
