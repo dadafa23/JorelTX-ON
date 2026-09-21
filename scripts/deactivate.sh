@@ -36,13 +36,11 @@ if [[ -f "$CONFIG_FILE" ]]; then
 TIMESTAMP="$(date '+%Y%m%d-%H%M%S')"
 CURRENT_BACKUP="$BACKUP_DIR/vkBasalt.conf.before-deactivate.$TIMESTAMP"
 
-```
 cp -a "$CONFIG_FILE" "$CURRENT_BACKUP"
 
 echo "Configuração atual preservada em:"
 echo "  $CURRENT_BACKUP"
 echo
-```
 
 fi
 
